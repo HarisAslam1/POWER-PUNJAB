@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>POWER PUNJAB AUTO REPAIR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
     <!----STYLE.CSS-LINK---->
     <link rel="stylesheet" href="css/style.css">
     <!----JAVA-CDN---->
@@ -23,49 +23,52 @@
     <!----BOOTSTRAP-LINK---->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+
 </head>
+<!----NAVBAR-START---->
 
-<body>
-    <!----NAVBAR-START---->
+<div class="container-fluid navbarr fixed-top  d-none">
 
-    <div class="container-fluid navbarr sticky-top  ">
-        <div class="row" id="navbar" style="background-color: #f2f3f7; align-items: center;">
-            <div class="col-md-2 navbar-logo">
-                <img src="img/logo-removebg-preview.png" alt="">
-            </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-7">
-                <div class="row hh">
-                    <div class="col-md-2"><a href="#HOME">Home</a></div>
-                    <div class="col-md-2"><a href="#SERVICE">Services</a></div>
-                    <div class="col-md-2"><a href="#ABOUT">About</a></div>
-                    <div class="col-md-2"><a href="#REVIEW">Review</a></div>
-                    <div class="col-md-2"><a href="#CONTACT">Contact</a></div>
-                    <div class="col-md-2">
-                        <div class="row hh">
-                            <div class="col-md-4"><a href=""><i class="fa-brands fa-facebook fa-fade"></i></a></div>
-                            <div class="col-md-4"><a href=""><i class="fa-brands fa-tiktok fa-fade"></i></a></div>
-                            <div class="col-md-4"><a href=""><i class="fa-brands fa-instagram fa-fade"></i></a></div>
-                        </div>
-
+    <div class="row" id="navbar" style=" align-items: center;">
+        <div class="col-md-2 navbar-logo">
+            <img src="img/logo-removebg-preview.png" alt="">
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+            <div class="row hh">
+                <div class="col-md-2"><a href="#HOME">Home</a></div>
+                <div class="col-md-2"><a href="#SERVICE">Services</a></div>
+                <div class="col-md-2"><a href="#ABOUT">About</a></div>
+                <div class="col-md-2"><a href="#REVIEW">Review</a></div>
+                <div class="col-md-2"><a href="#CONTACT">Contact</a></div>
+                <div class="col-md-2">
+                    <div class="row hh">
+                        <div class="col-md-4"><a href=""><i class="fa-brands fa-facebook fa-fade"></i></a></div>
+                        <div class="col-md-4"><a href=""><i class="fa-brands fa-tiktok fa-fade"></i></a></div>
+                        <div class="col-md-4"><a href=""><i class="fa-brands fa-instagram fa-fade"></i></a></div>
                     </div>
+
                 </div>
             </div>
-
         </div>
+
     </div>
+</div>
 
 
 
-    <!----NAVBAR-END---->
+<!----NAVBAR-END---->
 
-    <!----HOME-VIDEO-START---->
-
-
+<!----HOME-VIDEO-START---->
 
 
-    <!-- 
+
+
+<!-- 
 
 
     <div class="row">
@@ -99,56 +102,358 @@
 
 
 
-    <section class="videoo hero-section " id="HOME">
-        <section class="outter hero-video-main">
-            <section class="video-container-main">
-                <video src="img/Car repair [4k] - 100 Free stock footage - Best moments (1080p, h264).mp4" autoplay loop
-                    playsinline muted></video>
-                <div class="callout-main">
+<section class="videoo hero-section " id="HOME">
+    <section class="outter hero-video-main">
+        <section class="video-container-main">
+            <video src="img/Car repair [4k] - 100 Free stock footage - Best moments (1080p, h264).mp4" autoplay loop
+                playsinline muted></video>
+            <div class="callout-main">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5 header_text">POWER PUNJAB AUTO REPAIR</div>
-                        <div class="col-md-6"></div>
+                        <!-- <div class=" col-md-1 col-1 hide-265" ></div> -->
+                        <div class="col-lg-6 col-md-8 col-12 header_text">POWER PUNJAB AUTO REPAIR</div>
+                        <div class="col-lg-6 col-md-4 col-12 hide-2655"></div>
 
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5 header_text">BEST IN ENGINE & GEAR</div>
-                        <div class="col-md-6"></div>
+                        <!-- <div class="col-lg-1 col-md-1 col-1 hide-265"></div> -->
+                        <div class="col-lg-6 col-md-8 col-12 header_text">POWER PUNJAB AUTO REPAIR</div>
+                        <div class="col-lg-6 col-md-4 col-12 hide-2655"></div>
 
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5 sub_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ratione fuga impedit quia assumenda iusto esse sint quae blanditiis autem dolorem!</div>
-                        <div class="col-md-6"></div>
-
-                        <div class="col-md-1"></div>
-                        <!-- <div class="col-md-2 sub_heading con-btn whatsapp"><a href="">WhatsApp</a></div> -->
-                        <div class="col-md-3  con-btn call">
-                            <a href="" class="whatsapp">WhatsApp</a>
-                            <a href="" class="call">call</a>
+                        <!-- <div class="col-lg-1 col-md-1 col-1 hide-265"></div> -->
+                        <div class="col-lg-6 col-md-8 col-12 sub_heading">We handle everything your car needs — from
+                            engine,
+                            gear &
+                            suspension repairs to AC, electrical, polishing, and detailing.
                         </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6"></div>
-                    </div>
+                        <div class="col-lg-6 col-md-4 col-12 hide-265"></div>
 
+                        <!-- <div class="col-md-1 col-1 hide-2655"></div> -->
+                        <!-- <div class="col-md-2 sub_heading con-btn whatsapp"><a href="">WhatsApp</a></div> -->
+                        <div class="col-md-3 col-8  con-btn call">
+                            <a href="03024493535" class="whatsapp">WhatsApp</a>
+                            <a href="tel:03024493535" target="_blank" class="call">call</a>
+                        </div>
+
+                        <div class="col-md-9 col-4 hide-265"></div>
+                    </div>
                 </div>
-            </section>
+
+            </div>
         </section>
     </section>
+</section>
 
-    <!----HOME-VIDEO-END---->
+<!----HOME-VIDEO-END---->
+<!-- <section style="height: 500px; width: 500px; background-color: #12141D; color: #E4E6F0; " class="qqq">
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et accusamus neque recusandae fuga odio soluta excepturi atque ex? Laudantium praesentium tenetur accusamus illum ab quaerat ratione aspernatur atque incidunt!</p>
+    <button>hello</button>
+    <a href="#">hello</a>
+</section> -->
+<!----SERVICE-SECTION-START---->
 
-    <!----SERVICE-SECTION-START---->
-    <section class="Service all-section">
+<section class="Service all-section" id="SERVICE">
+    <div class="container">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 main-heading">
+                <div class="col-md-12 main-heading about-main-heading">
                     <h1>
-                        Our Services
+                        Services
                     </h1>
 
                 </div>
             </div>
+            <div class="row service-section">
 
-            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 service-text">
+                    <h1>Engine & Gear <br> Repairing</h1>
+                    <p>We offer comprehensive engine diagnostics and repair for all gasoline, diesel, and hybrid
+                        systems,
+                        from minor services to full overhauls, ensuring peak performance. Our expert transmission and
+                        gearbox service repairs both manual and automatic systems, fixing everything from slipping gears
+                        to
+                        fluid leaks to guarantee smooth, reliable shifting.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 order-property">
+                    <section class="outter-service hero-video-main-service">
+                        <section class="video-container-main-service">
+                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                            <div class="callout-main-service">
+
+
+                            </div>
+                        </section>
+                    </section>
+                </div>
+
+            </div>
+
+            <div class="row service-section mt-5">
+                <div class="col-lg-6 col-md-12 col-12 order-property">
+                    <section class="outter-service hero-video-main-service">
+                        <section class="video-container-main-service">
+                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                            <div class="callout-main-service"></div>
+                        </section>
+                    </section>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 service-text ">
+                    <h1> Accident Car <br> Repairing</h1>
+                    <p>We offer full-spectrum collision repair, restoring your vehicle completely from core structural
+                        damage (frame, suspension, airbags) using advanced systems and mechanical expertise. We
+                        seamlessly
+                        handle all auto body, paint, and refinishing work along with free estimates and complete
+                        insurance
+                        claim assistance to get you back on the road safely.</p>
+                </div>
+            </div>
+
+            <div class="row service-section mt-5">
+                <div class="col-lg-6 col-md-12 col-12 service-text ">
+                    <h1>Auto Painting</h1>
+                    <p>Our Professional Auto Painting Service for a stunning, durable finish, featuring computerized
+                        color
+                        matching for perfect results on everything from panel repair to full-body repaints. We use a
+                        meticulous process—including scratch removal and premium clear coats—to guarantee flawless
+                        quality
+                        that restores your vehicle's value and look.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 order-property">
+                    <section class="outter-service hero-video-main-service">
+                        <section class="video-container-main-service">
+                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                            <div class="callout-main-service">
+
+
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row service-section mt-5">
+                <div class="col-lg-6 col-md-12 col-12 order-property">
+                    <section class="outter-service hero-video-main-service">
+                        <section class="video-container-main-service">
+                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                            <div class="callout-main-service"></div>
+                        </section>
+                    </section>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 service-text ">
+                    <h1>Auto Electrical</h1>
+                    <p>Our specialized Auto Electrical Service handles all vehicle electronics, from essential Starting
+                        &
+                        Charging Systems (batteries, alternators, starters) to Advanced Diagnostics (ECU, sensors,
+                        warning
+                        lights). We ensure lasting solutions by expertly repairing wiring, lighting, and all Comfort &
+                        Convenience features.</p>
+                </div>
+            </div>
+
+            <div class="row service-section mt-5">
+                <div class="col-lg-6 col-md-12 col-12 service-text ">
+                    <h1> AC Repairing</h1>
+                    <p>We restore your comfort with comprehensive Auto AC Service, starting with full diagnostics to
+                        precisely locate leaks, blockages, or electrical faults in your system. We expertly handle
+                        refrigerant recharge, component replacement (compressor, evaporator), and blower
+                        motor/electrical
+                        fixes to ensure reliable, maximum cooling.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 order-property">
+                    <section class="outter-service hero-video-main-service">
+                        <section class="video-container-main-service">
+                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                            <div class="callout-main-service">
+
+
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row service-section mt-5">
+                <div class="col-lg-6 col-md-12 col-12 order-property">
+                    <section class="outter-service hero-video-main-service">
+                        <section class="video-container-main-service">
+                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                            <div class="callout-main-service"></div>
+                        </section>
+                    </section>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 service-text ">
+                    <h1>Detailing Polishing</h1>
+                    <p>We provide comprehensive detailing that begins with multi-stage paint correction and polishing to
+                        eliminate scratches and restore a deep, mirror-like gloss. We follow through with deep interior
+                        rejuvenation (shampooing and leather care) and apply superior protective finishes like ceramic
+                        coatings to safeguard your vehicle's showroom shine.</p>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="cards-container-service">
+                    <div class="card-wrapper">
+                        <div class="card-service">
+                            <div class="row">
+                                <div class="col-md-5 d-flex flex-column justify-content-center card-service-text">
+                                    <h1>Engine & Gear <br> Repairing</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis! Tempora
+                                        repellat ullam amet deserunt. Suscipit veritatis, libero dolores cum omnis quod
+                                        a voluptatibus dicta, sequi, repellat ratione dolore officiis.</p>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+
+                                    <section class="outter-service hero-video-main-service">
+                                        <section class="video-container-main-service">
+                                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                                            <div class="callout-main-service">
+
+
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card-service">
+                            <div class="row">
+                                <div class="col-md-5 d-flex flex-column justify-content-center card-service-text">
+                                    <h1>Engine & Gear <br> Repairing</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis! Tempora
+                                        repellat ullam amet deserunt. Suscipit veritatis, libero dolores cum omnis quod
+                                        a voluptatibus dicta, sequi, repellat ratione dolore officiis.</p>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+
+                                    <section class="outter-service hero-video-main-service">
+                                        <section class="video-container-main-service">
+                                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                                            <div class="callout-main-service">
+
+
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card-service">
+                            <div class="row">
+                                <div class="col-md-5 d-flex flex-column justify-content-center card-service-text">
+                                    <h1>Engine & Gear <br> Repairing</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis! Tempora
+                                        repellat ullam amet deserunt. Suscipit veritatis, libero dolores cum omnis quod
+                                        a voluptatibus dicta, sequi, repellat ratione dolore officiis.</p>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+
+                                    <section class="outter-service hero-video-main-service">
+                                        <section class="video-container-main-service">
+                                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                                            <div class="callout-main-service">
+
+
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card-service">
+                            <div class="row">
+                                <div class="col-md-5 d-flex flex-column justify-content-center card-service-text">
+                                    <h1>Engine & Gear <br> Repairing</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis! Tempora
+                                        repellat ullam amet deserunt. Suscipit veritatis, libero dolores cum omnis quod
+                                        a voluptatibus dicta, sequi, repellat ratione dolore officiis.</p>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+
+                                    <section class="outter-service hero-video-main-service">
+                                        <section class="video-container-main-service">
+                                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                                            <div class="callout-main-service">
+
+
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card-service">
+                            <div class="row">
+                                <div class="col-md-5 d-flex flex-column justify-content-center card-service-text">
+                                    <h1>Engine & Gear <br> Repairing</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis! Tempora
+                                        repellat ullam amet deserunt. Suscipit veritatis, libero dolores cum omnis quod
+                                        a voluptatibus dicta, sequi, repellat ratione dolore officiis.</p>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+
+                                    <section class="outter-service hero-video-main-service">
+                                        <section class="video-container-main-service">
+                                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                                            <div class="callout-main-service">
+
+
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrapper">
+                        <div class="card-service">
+                            <div class="row">
+                                <div class="col-md-5 d-flex flex-column justify-content-center card-service-text">
+                                    <h1>Engine & Gear <br> Repairing</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis! Tempora
+                                        repellat ullam amet deserunt. Suscipit veritatis, libero dolores cum omnis quod
+                                        a voluptatibus dicta, sequi, repellat ratione dolore officiis.</p>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6">
+
+                                    <section class="outter-service hero-video-main-service">
+                                        <section class="video-container-main-service">
+                                            <video src="img/engine.mp4" autoplay loop playsinline muted></video>
+                                            <div class="callout-main-service">
+
+
+                                            </div>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="row">
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-1"></div>
@@ -178,7 +483,7 @@
                                     <video src="img/denting.mp4" autoplay loop playsinline muted></video>
                                     <div class="callout">
                                         <img src="img/danting-removebg-preview.png" alt="">
-                                        <!-- <i class="fa-solid fa-screwdriver-wrench"></i> -->
+                                        
                                         <h2>Denting Repairing</h2>
                                     </div>
                                 </section>
@@ -199,7 +504,7 @@
                                     <video src="img/painting.mp4" autoplay loop playsinline muted></video>
                                     <div class="callout">
                                         <img src="img/panting-removebg-preview.png" alt="">
-                                        <!-- <i class="fa-solid fa-screwdriver-wrench"></i> -->
+                                        
                                         <h2>Painting Repairing</h2>
                                     </div>
                                 </section>
@@ -240,7 +545,7 @@
                                     <video src="img/ac.mp4" autoplay loop playsinline muted></video>
                                     <div class="callout">
                                         <img src="img/ac-removebg-preview.png" alt="">
-                                        <!-- <i class="fa-solid fa-screwdriver-wrench"></i> -->
+                                        
                                         <h2>AC Repairing</h2>
                                     </div>
                                 </section>
@@ -263,7 +568,7 @@
                                         autoplay loop playsinline muted></video>
                                     <div class="callout">
                                         <img src="img/engine-removebg-preview (1).png" alt="">
-                                        <!-- <i class="fa-solid fa-screwdriver-wrench"></i> -->
+                                        
                                         <h2>Engine & Gear Repairing</h2>
                                     </div>
                                 </section>
@@ -275,13 +580,13 @@
 
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!----SERVICE-SECTION-END---->
+            </div> -->
+    </div>
+</section>
+<!----SERVICE-SECTION-END---->
 
-    <!----EXTERNAL-SERVICES-SECTION-START---->
-    <!-- <section class="Services all-section" id="SERVICE">
+<!----EXTERNAL-SERVICES-SECTION-START---->
+<!-- <section class="Services all-section" id="SERVICE">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 main-heading">
@@ -506,10 +811,10 @@
 
         </div>
     </section> -->
-    <!----EXTRNAL-SERVICES-SECTION-END---->
+<!----EXTRNAL-SERVICES-SECTION-END---->
 
-    <!----INTERNAL-SERVICES-SECTION-START---->
-    <!-- <section class="Services all-section">
+<!----INTERNAL-SERVICES-SECTION-START---->
+<!-- <section class="Services all-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 main-heading">
@@ -734,9 +1039,9 @@
 
         </div>
     </section> -->
-    <!----INTERNAL-SERVICES-SECTION-END---->
-    <!----INTERIOR-SERVICES-SECTION-START---->
-    <!-- <section class="Services all-section">
+<!----INTERNAL-SERVICES-SECTION-END---->
+<!----INTERIOR-SERVICES-SECTION-START---->
+<!-- <section class="Services all-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 main-heading">
@@ -961,27 +1266,32 @@
 
         </div>
     </section> -->
-    <!----INTERIOR-SERVICES-SECTION-END---->
+<!----INTERIOR-SERVICES-SECTION-END---->
 
-    <!----ABOUT-SECTION-START---->
+<!----ABOUT-SECTION-START---->
 
-    <section class="About all-section" id="ABOUT">
+<section class="About all-section" id="ABOUT">
+    <div class="container">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 main-heading about-main-heading">
+                <div class="col-md-12 main-heading ">
                     <h1>
                         About
                     </h1>
-                    <h1>
-                        Vision
-                    </h1>
+
                 </div>
             </div>
-            <div class="row ">
+            <div class="row about-text-p">
 
-                <div class="col-md-6  about-text">
+                <div
+                    class="col-lg-6 col-md-6 col-12 d-flex flex-column justify-content-between about-text about-sepration">
                     <div class="row">
+
+
                         <div class="col-md-12">
+                            <h1>
+                                Our Story
+                            </h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae velit, distinctio
                                 accusamus,
                                 exercitationem enim maxime quia labore temporibus perspiciatis magni ea in qui libero
@@ -989,41 +1299,56 @@
                                 quos vero assumenda?</p>
                         </div>
 
-                        <div class="col-md-12 about-img about-img-margin">
-                            <img src="img/Gemini_Generated_Image_ipbf8nipbf8nipbf.png" alt="">
-                        </div>
-
                     </div>
+                    <div class="row">
+
+                        <div class="col-md-12 about-img padding-query-image">
+                            <img src="img/story.png" alt="">
+                        </div>
+                    </div>
+
+
 
                 </div>
 
-                <div class="col-md-6  about-text">
-                    <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 d-flex flex-column justify-content-between  about-text ">
+                    <div class="row padding-query">
                         <div class="col-md-12">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae velit, distinctio
-                                accusamus,
-                                exercitationem enim maxime quia labore temporibus perspiciatis magni ea in qui libero
-                                cum, autem
-                                quos vero assumenda?</p>
+                            <h1>
+                                Why Choice US?
+                            </h1>
+                            <ul>
+                                <li>Transparent Communication</li>
+                                <li>Safty & Satisfacation</li>
+                                <li>Work Quality</li>
+                                <li>Digital Vehical Inspection</li>
+                                <li>Well Trained Staff</li>
+                                <li>Advanced Tools</li>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="row">
 
-                        <div class="col-md-12 about-img about-img-margin">
-                            <img src="img/Gemini_Generated_Image_nfqltanfqltanfql.png" alt="">
+
+                        <div class="col-md-12 about-img ">
+                            <img src="img/why.png" alt="">
                         </div>
 
                     </div>
+
                 </div>
 
             </div>
-
         </div>
-    </section>
+    </div>
+</section>
 
-    <!----ABOUT-SECTION-END---->
+<!----ABOUT-SECTION-END---->
 
 
-    <!----REVIEW-SECTION-START---->
-    <section class="Review all-section" id="REVIEW">
+<!----REVIEW-SECTION-START---->
+<section class="Review all-section" id="REVIEW">
+    <div class="container">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 main-heading">
@@ -1037,10 +1362,10 @@
             <div class="owl-carousel  review-slider">
                 <div class="review-card-main">
                     <div class="row review-card">
-                        <div class="col-md-2">
+                        <div class="col-lg-2 col-md-2 col-2">
                             <img src="img/review.png" alt="">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-lg-10 col-md-10 col-10">
                             <p>" After visiting multiple times submitting my feedback with five stars. Sometime they
                                 takes time but overall my experience is very good with Punjab auto repair. Thanks to
                                 team and management ❣️ "</p>
@@ -1052,10 +1377,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 review-card-img">
+                            <div class="col-md-3 col-4 review-card-img">
                                 <img src="img/gazi.png" alt="">
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-9 col-8">
                                 <div class="row" style="align-items: center;">
                                     <div class="col-md-12">
                                         <h5>Gazi Sarowar</h5>
@@ -1075,10 +1400,10 @@
                 </div>
                 <div class="review-card-main">
                     <div class="row review-card">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-2">
                             <img src="img/review.png" alt="">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-10">
                             <p>"The gentleman is very polite and professional.
                                 His main aim is Customer observation and owning the job.
                                 I'm maintaining my all vehicles from him." <span class="opacity-0">. <br> . <br> . <br>
@@ -1091,10 +1416,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 review-card-img">
+                            <div class="col-md-3 col-4 review-card-img">
                                 <img src="img/jamal.png" alt="">
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-8">
                                 <div class="row" style="align-items: center;">
                                     <div class="col-md-12">
                                         <h5>M.ABUZAR Jamal</h5>
@@ -1113,10 +1438,10 @@
                 </div>
                 <div class="review-card-main">
                     <div class="row review-card">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-2">
                             <img src="img/review.png" alt="">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-10">
                             <p>" Very Good experience with power Punjab workshop, best price best work progress, I
                                 recommend to customers visit power Punjab workshop "<span class="opacity-0">. <br> .
                                     <br> . <br></span></p>
@@ -1128,10 +1453,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 review-card-img">
+                            <div class="col-md-3 col-4 review-card-img">
                                 <img src="img/adnan.png" alt="">
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-9 col-8">
                                 <div class="row" style="align-items: center;">
                                     <div class="col-md-12">
                                         <h5>Adnan Boby</h5>
@@ -1150,10 +1475,10 @@
                 </div>
                 <div class="review-card-main">
                     <div class="row review-card">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-2">
                             <img src="img/review.png" alt="">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-10">
                             <p>" I have a good experience with power punjab auto they have professionals team for car
                                 repairing" <span class="opacity-0">. <br> . <br> . <br>. <br></span></p>
                         </div>
@@ -1164,10 +1489,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 review-card-img">
+                            <div class="col-md-3 col-4 review-card-img">
                                 <img src="img/raheel.png" alt="">
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-8">
                                 <div class="row" style="align-items: center;">
                                     <div class="col-md-12">
                                         <h5>Muhammad Raheel</h5>
@@ -1186,10 +1511,10 @@
                 </div>
                 <div class="review-card-main">
                     <div class="row review-card">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-2">
                             <img src="img/review.png" alt="">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-10">
                             <p>"Experienced engine mechanic, skillful painter more important to me they are not
                                 overcharging. Very economical. Recommended 👍<span class="opacity-0">. <br> . <br>
                                 </span> "</p>
@@ -1201,10 +1526,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 review-card-img">
+                            <div class="col-md-3  col-4 review-card-img">
                                 <img src="img/RANA.png" alt="">
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-8">
                                 <div class="row" style="align-items: center;">
                                     <div class="col-md-12">
                                         <h5>Rana Amir Hayat</h5>
@@ -1223,10 +1548,10 @@
                 </div>
                 <div class="review-card-main">
                     <div class="row review-card">
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-2">
                             <img src="img/review.png" alt="">
                         </div>
-                        <div class="col-md-10">
+                        <div class="col-md-10 col-10">
                             <p>"Recommended shop for Filipinos like me, they fixed my AC and other mechanical problems
                                 with my car, the staff are friendly, and the
                                 price is affordable, as for the car painting, the quality they use is good."</p>
@@ -1238,10 +1563,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 review-card-img">
+                            <div class="col-md-3 col-4 review-card-img">
                                 <img src="img/PIL.png" alt="">
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-9 col-8">
                                 <div class="row" style="align-items: center;">
                                     <div class="col-md-12">
                                         <h5>Harlan De jesus</h5>
@@ -1250,7 +1575,7 @@
                                         <i class="fa-solid fa-star colored"></i>
                                         <i class="fa-solid fa-star colored"></i>
                                         <i class="fa-solid fa-star colored"></i>
-                                     <i class="fa-solid fa-star colored"></i>
+                                        <i class="fa-solid fa-star colored"></i>
                                         <i class="fa-solid fa-star colored"></i>
                                     </div>
                                 </div>
@@ -1259,229 +1584,254 @@
                     </div>
                 </div>
             </div>
-
         </div>
-    </section>
-    <!----REVIEW-SECTION-END---->
+    </div>
+</section>
+<!----REVIEW-SECTION-END---->
 
-    <!----CONTACT-US-START---->
-    <section class="Contact-us all-section" id="CONTACT">
+<!----CONTACT-US-START---->
+<section class="Contact-us all-section" id="CONTACT">
+    <div class="container">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 main-heading">
-                    <h1>
-                        Contact
-                    </h1>
+        <div class="row">
+            <div class="col-md-12 main-heading">
+                <h1>
+                    Contact
+                </h1>
 
+            </div>
+
+        </div>
+        <div class="row contact-all">
+            <div class="col-lg-4 col-md-12 contact-number">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-3 contact-logo">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class=" col-lg-9 col-md-10 col-9">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-12">
+                                <h5>Phone :</h5>
+                            </div>
+                            <div class="col-md-12 contact-link-text">
+                                <a href="#">0522129137</a> ,
+                                <a href="#">0529892502</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-5">
+                    <div class="col-lg-3 col-md-2 col-3 contact-logo">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class=" col-lg-9 col-md-10 col-9">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-12">
+                                <h5>Whatsapp</h5>
+                            </div>
+                            <div class="col-md-12 contact-link-text">
+                                <a href="#">0522129137</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-lg-3 col-md-2 col-3 contact-logo">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="col-lg-9 col-md-10 col-9">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-12">
+                                <h5>E-mail</h5>
+                            </div>
+                            <div class="col-md-12 contact-link-text overflow-x-scroll">
+                                <a href="#">punjab5ab1947@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row contact-social">
+<div class="col-md-12 ">
+
+    <a href=""><i class="fa-brands fa-facebook fa-fade"></i></a>
+    <a href=""><i class="fa-brands fa-tiktok fa-fade"></i></a>
+    <a href=""><i class="fa-brands fa-instagram fa-fade"></i></a>
+</div>
+                    
                 </div>
 
             </div>
-            <div class="row">
-                <div class="col-md-4 contact-number">
-                    <div class="row">
-                        <div class="col-md-3 contact-logo">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row" style="align-items: center;">
-                                <div class="col-md-12">
-                                    <h5>Phone :</h5>
-                                </div>
-                                <div class="col-md-12 contact-link-text">
-                                    <a href="#">0522129137</a> ,
-                                    <a href="#">0529892502</a>
+            <div class="col-lg-4 col-md-12 pandding-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3634.4024338472423!2d54.5128!3d24.3673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e40d7401ec765%3A0xc7d64066ae1a0636!2sPower%20Punjab%20Auto%20Repair!5e0!3m2!1sen!2s!4v1757443092430!5m2!1sen!2s"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="contact-map"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-                                </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!----CONTACT-US-END---->
 
+<!----FOOTER-START---->
+
+<section class="Footer  ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+            <div class="col-md-6 col-8">
+                <div class="row " style="display: flex; align-items: center;">
+                    <div class="col-md-3 col-4 footer-logo">
+                        <img src="img/logo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-md-9 col-8">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-md-12 footer-adjust">
+                                <h4>Power Punjab Auto Repair</h4>
+                                <h6>Best in Engine & Gear Repairing</h6>
                             </div>
+
                         </div>
                     </div>
-
-
-                    <div class="row mt-5">
-                        <div class="col-md-3 contact-logo">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row" style="align-items: center;">
-                                <div class="col-md-12">
-                                    <h5>Whatsapp</h5>
-                                </div>
-                                <div class="col-md-12 contact-link-text">
-                                    <a href="#">0522129137</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-5">
-                        <div class="col-md-3 contact-logo">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row" style="align-items: center;">
-                                <div class="col-md-12">
-                                    <h5>E-mail</h5>
-                                </div>
-                                <div class="col-md-12 contact-link-text">
-                                    <a href="#">punjab5ab1947@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row contact-social">
-
-                        <div class="col-md-2"><a href=""><i class="fa-brands fa-facebook fa-fade"></i></a></div>
-                        <div class="col-md-2"><a href=""><i class="fa-brands fa-tiktok fa-fade"></i></a></div>
-                        <div class="col-md-2"><a href=""><i class="fa-brands fa-instagram fa-fade"></i></a></div>
-                        <div class="col-md-6"></div>
-                    </div>
-
                 </div>
-                <div class="col-md-8 ">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3634.4024338472423!2d54.5128!3d24.3673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e40d7401ec765%3A0xc7d64066ae1a0636!2sPower%20Punjab%20Auto%20Repair!5e0!3m2!1sen!2s!4v1757443092430!5m2!1sen!2s"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        class="contact-map" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            </div> 
+            <div class="col-md-6 col-4 footer-social" style="">
+                <div class="col-md-2"><a href=""><i class="fa-brands fa-facebook fa-fade"></i></a></div>
+                <div class="col-md-2"><a href=""><i class="fa-brands fa-tiktok fa-fade"></i></a></div>
+                <div class="col-md-2"><a href=""><i class="fa-brands fa-instagram fa-fade"></i></a></div>
+            </div>
 
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-2 col-12"></div>
+            <div class="col-md-8 col12 footer-link">
+                <a href="#HOME">Home</a>
+                <a href="#SERVICE">Service</a>
+                <a href="#ABOUT">About</a>
+                <a href="#REVIEW">Review</a>
+                <a href="#CONTACT">Contact</a>
+            </div>
+            <div class="col-md-2 col-12"></div>
+            <div class="col-md-12">
+                <hr>
+            </div>
+            <div class="col-md-12" style="text-align: center;">
+                <p>© 2025 Company, Inc. All rights reserved.</p>
             </div>
         </div>
-    </section>
-    <!----CONTACT-US-END---->
+    </div>
+</section>
 
-    <!----FOOTER-START---->
-
-    <section class="Footer  mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <hr>
-                </div>
-                <div class="col-md-6">
-                    <div class="row " style="display: flex; align-items: center;">
-                        <div class="col-md-3 footer-logo">
-                            <img src="img/logo-removebg-preview.png" alt="">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row" style="align-items: center;">
-                                <div class="col-md-12">
-                                    <h4>Power Punjab Auto Repair</h4>
-                                    <h6>Best in Engine & Gear Repairing</h6>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 footer-social" style="">
-                    <div class="col-md-2"><a href=""><i class="fa-brands fa-facebook fa-fade"></i></a></div>
-                    <div class="col-md-2"><a href=""><i class="fa-brands fa-tiktok fa-fade"></i></a></div>
-                    <div class="col-md-2"><a href=""><i class="fa-brands fa-instagram fa-fade"></i></a></div>
-                </div>
-
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 footer-link">
-                    <a href="#HOME">Home</a>
-                    <a href="#SERVICE">Service</a>
-                    <a href="#ABOUT">About</a>
-                    <a href="#REVIEW">Review</a>
-                    <a href="#CONTACT">Contact</a>
-                </div>
-                <div class="col-md-2"></div>
-                <div class="col-md-12">
-                    <hr>
-                </div>
-                <div class="col-md-12" style="text-align: center;">
-                    <p>© 2025 Company, Inc. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----FOOTER-END---->
+<!----FOOTER-END---->
 
 
 
-    <!----STYLE-JAVA-SCRIPT---->
-    <script src="js/style.js"></script>
 
-    <!----owl.carousel-SCRIPT---->
+<!----owl.carousel-SCRIPT---->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
 
 
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel();
-        });
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+    });
 
 
 
-        $('.review-slider').owlCarousel({
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: false,
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 2,
-                    nav: false
-                },
-                1000: {
-                    items: 3,
-                    nav: true,
-                    loop: true
-                }
+    $('.review-slider').owlCarousel({
+        autoplay: false,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: false,
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 2,
+                nav: true
+            },
+            1000: {
+                items: 3,
+                nav: true,
+                loop: true
             }
-        })
-    </script>
-    <script>
-        $('.service-1').owlCarousel({
-            autoplay: false,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 1,
-                    nav: false
-                },
-                1000: {
-                    items: 1,
-                    nav: true,
-                    loop: true
-                }
+        }
+    })
+</script>
+<script>
+    $('.service-1').owlCarousel({
+        autoplay: false,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 1,
+                nav: false
+            },
+            1000: {
+                items: 1,
+                nav: true,
+                loop: true
             }
-        })
-    </script>
+        }
+    })
+</script>
+<!-- ----GSAP---- -->
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+    const wrappers = document.querySelectorAll('.card-wrapper');
 
-    <!----BOOTSTRAP-SCRIPT---->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+    wrappers.forEach((wrapper, index) => {
+        const card = wrapper.querySelector('.card-service');
+
+        // For the last card, allow normal scroll without pinning.
+        if (index === wrappers.length - 1) {
+            gsap.set(card, { opacity: 1, scale: 1 });
+        } else {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: wrapper,
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true,
+                    pin: true,
+                    pinSpacing: false,
+                }
+            })
+                .set(card, { opacity: 1, scale: 1 })
+                .to(card, { opacity: 0, scale: 0.6, ease: "none" }, 0.01);
+        }
+    });
+</script>
+
+<!----STYLE-JAVA-SCRIPT---->
+<script src="js/style.js"></script>
+<!----BOOTSTRAP-SCRIPT---->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

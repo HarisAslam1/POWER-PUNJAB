@@ -1,24 +1,41 @@
+// document.addEventListener('DOMContentLoaded', () => {
+//     const navbar = document.getElementById('navbar');
+//     const heroSection = document.querySelector('.hero-section');
+
+//     window.addEventListener('scroll', () => {
+
+//         const heroHeight = heroSection.offsetHeight;
+
+
+//         if (window.scrollY > heroHeight) {
+
+//             navbar.classList.add('navbar-shadow');
+            
+//         } else {
+
+//             navbar.classList.remove('navbar-shadow');
+            
+//         }
+//     });
+// });
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
-    const heroSection = document.querySelector('.hero-section');
+    // You can still keep the reference, but we don't need its height anymore
+    // const heroSection = document.querySelector('.hero-section'); 
 
     window.addEventListener('scroll', () => {
 
-        const heroHeight = heroSection.offsetHeight;
-
-
-        if (window.scrollY > heroHeight) {
-
+        // Check if the user has scrolled *any* amount down (i.e., past the very top)
+        if (window.scrollY > 0) { 
             navbar.classList.add('navbar-shadow');
         } else {
-
-            navbar.classList.remove('navbar-shadow');
+            // When the user is back at the very top of the page
+            navbar.classList.remove('navbar-shadow'); 
         }
     });
 });
-
-
-
 
 $('.owl-carousel').owlCarousel({
     loop:true,
