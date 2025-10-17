@@ -48,6 +48,28 @@ body {
 /* <!----NAVBAR-START----> */
 .navbar-logo img {
    width: 20%;
+
+}
+
+.navbar-button-main {
+   background: linear-gradient(90deg, #3D344B 0%, #30303D 100%);
+   
+}
+
+.navbar-button {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
+
+   transition: all 0.3s ease;
+   -webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+   -ms-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+}
+
+.navbar-button:hover {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23CCCCCC' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+
 }
 
 .navbar-sign-up {
@@ -96,6 +118,7 @@ body {
 .navbar-text-color a:hover {
    color: #CCCCCC !important;
 }
+
 .nab-bar-social .fa-facebook {
    color: #1877F2;
    ;
@@ -596,13 +619,14 @@ body {
    .padding-query {
       padding-top: 30px !important;
    }
-.padding-query-image {
-   padding-bottom: 30px !important;
-}
 
-.about-text ul li {
-   font-size: 16px !important;
-}
+   .padding-query-image {
+      padding-bottom: 30px !important;
+   }
+
+   .about-text ul li {
+      font-size: 16px !important;
+   }
 }
 
 
@@ -624,13 +648,14 @@ body {
    .padding-query {
       padding-top: 30px !important;
    }
-   .padding-query-image {
-   padding-bottom: 30px !important;
-}
 
-.about-text ul li {
-   font-size: 14px !important;
-}
+   .padding-query-image {
+      padding-bottom: 30px !important;
+   }
+
+   .about-text ul li {
+      font-size: 14px !important;
+   }
 
 }
 
@@ -962,7 +987,8 @@ body {
    -ms-transition: all 0.3s ease;
    -o-transition: all 0.3s ease;
 }
-.footer-link a:hover{
+
+.footer-link a:hover {
    color: #CCCCCC;
 }
 
